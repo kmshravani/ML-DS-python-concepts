@@ -1,0 +1,39 @@
+'''Defining a Vector'''
+import numpy as np
+x = [1,2,3]
+vector = np.array(x)
+print(vector)
+print(vector.ndim)
+print(vector.shape)
+'''Arithmetic Operations on Vectors'''
+a = np.random.randint(10,50, size=5)
+b = np.random.randint(25,75, size=5)
+print(a)
+print(b)
+c = a+b
+print(c)
+c = a-b
+print(c)
+c = a*b
+print(c)
+'''Dot Product'''
+a = np.random.randint(10,50, size=5)
+b = np.random.randint(25,75, size=5)
+print(a)
+print(b)
+vector_dot = a.dot(b)
+print(vector_dot)
+x = np.arange(5,10)
+y = np.arange(5)
+print(x)
+print(y)
+vector_dot_2 = x.dot(y)
+print(vector_dot_2)
+'''Vector Scalar Multiplication'''
+x = np.arange(5,10)
+print(x)
+vs = 3*x
+print("Vector Scalar multiplication is; ", vs)
+
+
+
